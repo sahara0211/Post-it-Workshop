@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Taller de Post-it</title>
-    <link rel="stylesheet" href="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Taller de Post-it — Reparado</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
     <div id="app-container">
-        <button id="toggle-theme-button">Modo Oscuro</button>
-        <h1>Mis Post-it</h1>
-        <div>
-            <input type="text" id="new-note-input" placeholder="Escribe una nueva nota...">
-            <button id="add-note-button" disabled>Agregar</button>
-        </div>
+        <header class="topbar">
+            <h1>Mis Post-it</h1>
+            <div class="controls">
+                <button id="toggle-theme-button" class="btn">Modo Oscuro</button>
+            </div>
+        </header>
 
-        <div id="notes-container"></div>
+        <section class="composer">
+            <input type="text" id="new-note-input" placeholder="Escribe una nueva nota..." />
+            <button id="add-note-button" disabled>Agregar</button>
+        </section>
+
+        <section id="notes-container" aria-live="polite"></section>
+
+        <footer class="foot">
+            <small>Notas guardadas localmente en tu navegador.</small>
+        </footer>
     </div>
 
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

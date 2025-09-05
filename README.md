@@ -23,7 +23,6 @@ Actualmente, varias de estas características se encuentran comprometidas.
 ---
 
 ## Áreas afectadas
-
 Los registros indican modificaciones en tres frentes principales:
 
 ### 🔐 Control de versiones
